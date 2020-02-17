@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ejemploapp2.pmdm_ejerciciofragments.R
 
-//clase del fragment "dashboard"
+//clase del fragment "Notifications"
 class NotificationsFragment : Fragment() {
 
     private lateinit var notificationsViewModel: NotificationsViewModel

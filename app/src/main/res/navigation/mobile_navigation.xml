@@ -22,4 +22,10 @@
         android:name="com.ejemploapp2.pmdm_ejerciciofragments.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_errors"
+        android:name="com.ejemploapp2.pmdm_ejerciciofragments.ui.errors.ErrorsFragment"
+        android:label="@string/title_errors"
+        tools:layout="@layout/fragment_errors" />
 </navigation>

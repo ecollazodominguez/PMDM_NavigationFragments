@@ -1,4 +1,4 @@
-package com.ejemploapp2.pmdm_ejerciciofragments.ui.home
+package com.ejemploapp2.pmdm_ejerciciofragments.ui.errors
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ejemploapp2.pmdm_ejerciciofragments.R
 
-//clase del fragment "home"
-class HomeFragment : Fragment() {
+//clase del fragment "Errors"
+class ErrorsFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var errorsViewModel: ErrorsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,11 +21,11 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
         //Aquí indicamos a la view qué layout coger y su texto
     ): View? {
-        homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(this, Observer {
+        errorsViewModel =
+            ViewModelProviders.of(this).get(ErrorsViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_errors, container, false)
+        val textView: TextView = root.findViewById(R.id.text_errors)
+        errorsViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

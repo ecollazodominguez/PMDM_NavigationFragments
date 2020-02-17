@@ -23,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         // Indicamos el tamaño de la barra de navegación
+        // para añadir otro botón necesitariamos añadir todos los parámetros necesarios en
+        // la carpeta res en los apartados values/strings, navigation/mobile_navigation y menu/bottom_nav_menu
+        // además de crear la carpeta en la ui de nuevo fragmento con sus clases.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_errors
             )
         )
         //Se crea y se muestra
